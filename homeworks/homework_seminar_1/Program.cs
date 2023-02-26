@@ -46,14 +46,29 @@
 // -3 -> нет
 // 7 -> нет
 
+// Console.Write("Input number -> ");
+// int num = Convert.ToInt32(Console.ReadLine());
+
+// if (num % 2 == 0) 
+// {
+//     Console.WriteLine($"Number {num} is even");
+// }
+// else
+// {
+//     Console.WriteLine($"Number {num} is odd");
+// }
+
+// Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+// 5 -> 2, 4
+// 8 -> 2, 4, 6, 8
+
 Console.Write("Input number -> ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-if (num % 2 == 0) 
+int current = 1;
+
+while (current != num)
 {
-    Console.WriteLine($"Number {num} is even");
-}
-else
-{
-    Console.WriteLine($"Number {num} is odd");
+    if (current % 2 == 0) Console.WriteLine(current);
+    current ++;
 }
