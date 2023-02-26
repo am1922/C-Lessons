@@ -29,14 +29,31 @@
 // 44 5 78 -> 78
 // 22 3 9 -> 22
 
-Console.WriteLine("Input three numbers and the application will determine which one is the maximum");
-int num1 = Convert.ToInt32(Console.ReadLine());
-int num2 = Convert.ToInt32(Console.ReadLine());
-int num3 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input three numbers and the application will determine which one is the maximum");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// int num2 = Convert.ToInt32(Console.ReadLine());
+// int num3 = Convert.ToInt32(Console.ReadLine());
 
-int max = num1;
+// int max = num1;
 
-if (num2 > num1) max = num2;
-if (num3 > num2) max = num3;
+// if (num2 > num1) max = num2;
+// if (num3 > num2) max = num3;
 
-Console.WriteLine($"Maximum of three numbers is {max}");
+// Console.WriteLine($"Maximum of three numbers is {max}");
+
+// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+// 4 -> да
+// -3 -> нет
+// 7 -> нет
+
+Console.Write("Input number -> ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+if (num % 2 == 0) 
+{
+    Console.WriteLine($"Number {num} is even");
+}
+else
+{
+    Console.WriteLine($"Number {num} is odd");
+}
